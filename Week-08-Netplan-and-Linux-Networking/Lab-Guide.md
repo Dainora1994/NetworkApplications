@@ -11,6 +11,10 @@ Complete guide showing both GUI (Graphical User Interface) and CLI (Command Line
 
 ### PC Requirements:
 - **Ubuntu 24.04 LTS** (Virtual Machine, lab PC, or LOD platform)
+  - **Download Ubuntu 24.04.3 Desktop ISO:** [Direct Download Link](https://releases.ubuntu.com/24.04/ubuntu-24.04.3-desktop-amd64.iso)
+  - **Alternative:** [Ubuntu Download Page](https://releases.ubuntu.com/24.04/)
+  - **File:** `ubuntu-24.04.3-desktop-amd64.iso` (5.9 GB)
+  - **For VirtualBox:** Use Desktop ISO (not Server)
 - Terminal/Shell access
 - Administrator/sudo privileges
 - Network connectivity
@@ -77,6 +81,15 @@ Ubuntu uses a layered approach to networking:
 ## SETUP: PREPARING FOR WEEK 8
 
 **What we're doing:** We need to set up our Ubuntu environment for network configuration.
+
+### If you need to download Ubuntu:
+
+**Ubuntu 24.04.3 LTS Desktop ISO Download:**
+- **Direct Download:** [https://releases.ubuntu.com/24.04/ubuntu-24.04.3-desktop-amd64.iso](https://releases.ubuntu.com/24.04/ubuntu-24.04.3-desktop-amd64.iso)
+- **Download Page:** [https://releases.ubuntu.com/24.04/](https://releases.ubuntu.com/24.04/)
+- **File Size:** 5.9 GB
+- **Version:** Ubuntu 24.04.3 LTS (Noble Numbat)
+- **For VirtualBox:** Download the Desktop ISO (includes GUI)
 
 1. **Start your Ubuntu system**
    - Open your Ubuntu VM, lab PC, or LOD platform
