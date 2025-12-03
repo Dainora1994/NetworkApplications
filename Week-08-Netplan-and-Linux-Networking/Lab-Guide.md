@@ -316,6 +316,31 @@ Ubuntu uses a layered approach to networking:
 **Problem: Network not working**
 - **Solution:** Check Network settings in VM, ensure NAT is enabled
 
+**Problem: Graphics Driver Error (vmwgfx / unsupported hypervisor)**
+- **Error Message:** `[drm] *ERROR* vmwgfx seems to be running on an unsupported hypervisor`
+- **What it means:** Ubuntu is detecting VMware graphics drivers but you're using VirtualBox
+- **Solution 1: Change Graphics Controller (Recommended)**
+  1. Shut down the VM completely
+  2. In VirtualBox, select your VM
+  3. Click **Settings** → **Display**
+  4. Under **Graphics Controller**, change from:
+     - **VBoxVGA** or **VMSVGA** → **VBoxSVGA**
+  5. Click **OK**
+  6. Start the VM again
+- **Solution 2: Disable 3D Acceleration**
+  1. Settings → **Display**
+  2. Uncheck **"Enable 3D Acceleration"**
+  3. Click **OK**
+  4. Restart VM
+- **Solution 3: Install VirtualBox Guest Additions**
+  - This installs proper VirtualBox graphics drivers
+  - See Step 5 in installation guide above
+- **Solution 4: Ignore the Error (If Ubuntu Still Works)**
+  - This error is often just a warning
+  - If Ubuntu boots and works normally, you can ignore it
+  - It won't affect networking or most functionality
+- **Note:** This error appears during boot but usually doesn't prevent Ubuntu from working
+
 ---
 
 ### VERIFY INSTALLATION
